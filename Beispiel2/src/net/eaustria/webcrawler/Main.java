@@ -6,7 +6,6 @@
 package net.eaustria.webcrawler;
 
 import java.io.IOException;
-
 /**
  *
  * @author Daniel Fischer
@@ -14,6 +13,6 @@ import java.io.IOException;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        WebCrawler6 = new WebCrawler6("http://www.orf.at", 64);
+        
     }
 }

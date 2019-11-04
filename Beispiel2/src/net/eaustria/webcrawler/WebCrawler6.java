@@ -29,7 +29,7 @@ public class WebCrawler6 implements ILinkHandler {
     }
 
     @Override
-    public void queueLink(String link) throws Exception {
+    public void queueLink(String link) {
         startNewThread(link);
     }
 
@@ -48,22 +48,21 @@ public class WebCrawler6 implements ILinkHandler {
         return visitedLinks.contains(s);
     }
 
-    private void startNewThread(String link) throws Exception {
+    private void startNewThread(String link) {
         // ToDo: Use executer Service to start new LinkFinder Task!
         execService.execute(new LinkFinder(link, this));
         
     }
 
-    private void startCrawling() throws Exception {        
+    private void startCrawling() {        
         startNewThread(this.url);
     }
 
     /**
      * @param args the command line arguments
-     */
-    /*
-    public static void main(String[] args) throws Exception {
+     */    
+    public static void main(String[] args) {
         new WebCrawler6("http://www.orf.at", 64).startCrawling();
     }
-    */
+    
 }

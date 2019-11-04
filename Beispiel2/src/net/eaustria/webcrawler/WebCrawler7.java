@@ -51,7 +51,7 @@ public class WebCrawler7 implements ILinkHandler {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         new WebCrawler7("http://www.orf.at", 64).startCrawling();        
     }
 
